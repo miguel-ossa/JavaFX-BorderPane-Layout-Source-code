@@ -1,7 +1,8 @@
-<?import javafx.geometry.Insets?>
 <!--
 https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/BorderPane.html
 -->
+<?import javafx.geometry.Insets?>
+
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.HBox?>
 
@@ -14,8 +15,21 @@ https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/BorderPane.html
                 BorderPane.alignment="center"
                 style="-fx-border-color: blue; -fx-border-width: 3; -fx-border-style: dashed"/>
     </top>
+    <center>
+        <Label text="This label is in the center position and has really long text inside"
+               style="-fx-border-color: blue; -fx-border-width: 3; -fx-border-style: dashed"/>
+    </center>
+    <left>
+        <Label text="This label is in the left position" alignment="center"
+               style="-fx-border-color: blue; -fx-border-width: 3; -fx-border-style: dashed"/>
+    </left>
+    <right>
+        <Label text="This label is in the right position"
+               style="-fx-border-color: blue; -fx-border-width: 3; -fx-border-style: dashed"/>
+    </right>
     <bottom>
-        <HBox spacing="10" alignment="bottom_right">
+        <HBox spacing="10" alignment="bottom_right"
+              style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed">
             <padding>
                 <Insets bottom="10" right="10"/>
             </padding>
